@@ -1,0 +1,163 @@
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #404040;
+    border-radius: 5px;
+    /*box-shadow: 2px 2px 15px #35BEE6;*/
+    border: 2px solid #35BEE6;
+    padding: 1px 5px 10px 5px;
+    width: 95%;
+    height: auto;
+    margin-left: 2%;
+    color: #FFFFFF;
+    font-size: 1em;
+    margin-bottom: 1em;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opactiy: 1;
+    }
+}
+
+
+.inmateQuickInfo{
+    display:grid;
+    grid-template-columns: 3fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 0px;
+    align-items:center;
+}
+
+.inmateFullName{
+    font-weight:bold;
+    grid-column: 1/4;
+    border-radius: 5px;
+    padding:5px 0px 5px 3px;
+    margin: 3px 0px 3px 0px;
+    font-size:inherit;
+}
+
+.expand{
+    font: inherit;
+    padding: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    margin: 1px;
+    text-align:center;
+    color: #B3B3B3; 
+    background-color: #282828;
+   
+}
+
+.deleteButton {
+    font: inherit;
+    padding: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    margin: 1px;
+    text-align:center;
+    color: #B3B3B3; 
+    background-color: #282828;
+}
+
+.deleteButton:hover {
+    background-color: #282828;
+    color: #FFFFFF;
+}
+
+.editButton {
+    font: inherit;
+    padding: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    margin: 1px;
+    text-align:center;
+    color: #B3B3B3; 
+    background-color: #282828;
+}
+
+.editButton:hover {
+    background-color: #282828;
+    color: #FFFFFF;
+}
+
+
+/* CSS for opened quickedit box */
+.quickEditBox{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px darkgrey;
+    padding:1px;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: #404040;
+    color:#FFFFFF; 
+    top: 25%;
+    left: 25%;
+    z-Index: 100;
+}
+
+.quickEditGrid {
+    display:grid;
+    /*
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 50% 50%;
+    */
+    grid-row-gap: 10px;
+    z-Index: 100;
+}
+
+.backdrop{
+    position: fixed;
+    /*z-index: 1;*/
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;   
+}
+
+.cancelButton{
+    font: inherit;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    margin: 3px;
+    text-align:center;
+    color: #FFFFFF; 
+    background-color: #282828;
+    width: 10%;
+}
+
+.saveButton{
+    font: inherit;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    margin: 3px;
+    text-align:center;
+    color: #FFFFFF; 
+    background-color: #282828;
+    width: 10%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+}

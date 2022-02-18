@@ -1,0 +1,253 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.test{
+  height: 500px;
+  background-color:#181818;
+}
+
+h1{
+  background-color:#181818;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 2px;
+  margin-bottom: 0.25em;
+  text-align:center;
+}
+
+.titles{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0em 0.55em;
+}
+
+.subheader{
+  grid-column: span 3;
+  background-color:#282828;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0.5em 3em;
+  text-align:center;
+}
+
+.tags2{
+  text-align: left;
+  padding: 0.25em;
+  border: 1px;
+}
+
+.tags2{
+  text-align: center;
+  padding: 0.25em;
+  border: 1px;
+}
+
+.tags3{
+  text-align: right;
+  padding: 0.25em;
+  border: 1px;
+}
+
+.defaultBorder{
+  width:100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 2px solid #35BEE6;
+  background-color: #282828;
+  color: white;
+}
+
+.notifications{
+  width:100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: #282828;
+  margin-bottom: 1em;
+  color: white;
+  height: 78.5vh;
+  max-height: 78.5vh;
+  overflow-y: auto;
+}
+
+.settings{
+  width:100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: #282828;
+  margin-bottom: 1em;
+  color: white;
+  height:45vh;
+  overflow-y: auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  height: 86.5vh;
+  width: auto;
+  border-radius: 5px;
+  margin: 0.25em;
+}
+
+@media all and (max-width: 800px) {
+  .grid {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    flex-flow: row wrap;
+  }
+}
+.myProfile{
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 5px;
+  background-color: #404040;
+  padding: 10px;
+}
+
+.forms{
+  grid-column:span 1;
+  grid-row: span 1;
+  border-radius: 5px;
+  background-color: #404040;
+  padding: 10px;
+}
+
+.agency{
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 5px;
+  background-color: #404040;
+  padding: 10px;
+}
+
+.adminPanel{
+  grid-column:span 1;
+  grid-row: span 1;
+  border-radius: 5px;
+  background-color: #404040;
+  padding: 10px;
+}
+
+.accountSettingsGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.resetPasswordGrid{
+  grid-column:span 4;
+  grid-row:span 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #282828;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.updateNotifications{
+  grid-column:span 2;
+  grid-row:span 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #282828;
+  padding: 0.5em;
+  border-radius: 5px;  
+  margin-right:0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.accountSettingSubheader{
+  grid-column: span 4;
+  background-color:#282828;
+  color:white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: normal;
+  text-align:center;
+  margin:0px;
+  margin-bottom: 5px;
+}
+
+.changePasswordLabel{
+  grid-column: span 2;
+  margin: 0.25em;
+}
+
+.changePasswordField{
+  grid-column: span 2;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 2px solid #35BEE6;
+  background-color: #282828;
+  color: white;
+  margin: 0.25em;
+}
+
+.submitButton{
+  grid-column: span 4;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 2px solid #35BEE6;
+  background-color: #282828;
+  color: white;
+  margin: 0.25em;
+  cursor: pointer;
+}
+
+.checkmark{
+  grid-column: span 1;
+  height: 20px;
+  width: 20px;
+  background-color: #282828;
+  margin-bottom: 25%;
+  margin-left: 30%;
+}
+
+.notificationUpdateLabel{
+  grid-column: span 4;
+  margin: 0.25em;
+}
+
+.submitButtonNotifications{
+  grid-column: span 5;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 2px solid #35BEE6;
+  background-color: #282828;
+  color: white;
+  margin: 0.25em;
+  cursor: pointer;
+}
+
+.adminButtonSection{
+  grid-column:span 2;
+  grid-row:span 1;
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px #404040; 
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #35BEE6;
+  border-radius: 15px;
+}

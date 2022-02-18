@@ -1,0 +1,21 @@
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    height:auto;
+    width: 100%;
+    background-color: #181818;
+    padding: 0px 10px;
+    margin: 0.25em;
+    border-radius: 5px;
+    grid-column-gap: 10px;
+    border: 1px #35BEE6 solid;
+    grid-column-gap: 1px red;
+}
+
+.defualt{
+    text-align: center;
+}
+
+.defualt1{
+    text-align: right;
+}

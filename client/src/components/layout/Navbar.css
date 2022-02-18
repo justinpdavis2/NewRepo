@@ -1,0 +1,166 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* new stuff*/
+.navbar {
+  background-color: #181818;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  /*max-width: 1500px; */
+}
+
+
+.nav-logo {
+  color: white;
+  align-items: center;
+  margin:0px;
+  padding:0px;
+  max-width: 400px;
+  max-height: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  flex-grow: 1;
+  padding-top:10px;
+}
+
+.imgLogo{
+  object-fit:cover;
+  max-height:100%;
+  max-width:100%;
+  height:auto;
+  width:auto;
+  padding:0px;
+  margin-bottom:-10px;
+  margin-left: 20px;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+  0%{
+      opacity: 0;
+  }
+  100% {
+      opactiy: 1;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding: 1em;
+}
+
+.nav-links {
+  margin-right:2em;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #35BEE6;
+  border: 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 
+  0 0 0.125em hsl(0 0% 100% / 0.3),
+  0 0 0.125em #35BEE6;
+  box-shadow: inset 0 0 0.45em 0 #35BEE6,
+  0 0 0.45em 0 #35BEE6;
+  position:relative;
+  display: inline-block;
+}
+
+.navbar-item a:hover{
+  color: #41D4FF;
+  opacity: 1;
+}
+
+.nav-item a:active,
+.nav-item a.active{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #9FE9FF;
+  
+  border: 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 
+  0 0 0.125em hsl(0 0% 100% / 0.3),
+  0 0 0.125em #35BEE6;
+  box-shadow: inset 0 0 0.45em 0 #35BEE6,
+  0 0 0.45em 0 #35BEE6;
+  position:relative;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #181818;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #35BEE6;
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+}

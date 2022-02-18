@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+form{
+    color:#FFFFFF;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 10px;
+}
+
+.warrant{
+    grid-column:1;
+}
+
+.maxWidth{
+    width:100%;
+    padding: 0.5em;
+    margin:3px;
+    border-radius: 5px;
+    border: 2px solid #35BEE6;
+    background-color: #282828;
+    color: white;
+}
+
+.textarea{
+    width:100%;
+    padding: 0.5em;
+    margin:3px;
+    border-radius: 5px;
+    border: 2px solid #35BEE6;
+    background-color: #282828;
+    color: white;
+    resize:none;
+    height:7em;
+}
+
+.submitbutton{
+    width:100%;
+    height: 60px;
+    padding: 0.5em;
+    margin:3px;
+    border-radius: 5px;
+    border: 2px solid #35BEE6;
+    background-color: #282828;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.span2{
+    grid-column: span 2;
+}
+
+.span3{
+    grid-column: span 3;
+}
+
+.span4{
+    grid-column: span 4;
+}
+
+.span8{
+    grid-column: span 8;
+}
+
+.fullspan1{
+    grid-column: span 2; 
+    width:80%;
+    padding:10px;
+}
+
+.checkmark {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.customSelect{
+    grid-column: span 4;
+    position: relative;
+    font-family: Arial;
+}
